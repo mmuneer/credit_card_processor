@@ -16,11 +16,7 @@ class Account
   end
 
   def charge(amount)
-    if balance + amount > limit
-      # ignore as if they were declined
-    else
-       self.balance += amount
-    end
+    self.balance += amount unless (balance + amount) > limit
   end
 
   def credit(amount)
