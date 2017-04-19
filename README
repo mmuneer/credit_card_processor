@@ -1,7 +1,5 @@
 Basic Credit Card Processing
 ----------------------------
-# Basic Credit Card Processing
------
 
 Imagine that you're writing software for a credit card provider.  Implement a
 program that will add new credit card accounts, process charges and credits
@@ -65,17 +63,6 @@ Quincy: error
 Tom: $500
 ```
 
-Implement your solution in any programming language you wish, but keep in mind
-we may ask you to explain or extend your code.  Please write automated tests
-and include them with your submission.
-
-In addition to your code and tests, please also include a README that explains:
-
-- An overview of your design decisions
-- Why you picked the programming language you used
-- How to run your code and tests, including how to install any dependencies
-  your code may have.
-
 PreReq:
 =========
  - Ruby 2.15 is installed
@@ -91,10 +78,10 @@ Usage instructions
 - To run specs, run 'bundle exec rspec'
 
 
-Design Decisions
+Class descriptions
 ===============
 
-At the core of the program is the 'AccountManager' class. Running  './cc_process input' reads the input file and sends each line_item to 'AccountManager'. 'AccountManager' parses each line_items and adds/credits/charges the account based on the command. Parser class is responsible for translating the line_items to arguments used to process the commands.  After creating an account, it is added to @@acounts collection, which can be acccessed via 'accounts' method. 'find' method can be used to search for an account by owener name. 
+At the core of the program is the 'AccountManager' class. Running  './cc_process input' reads the input file and sends each line_item to 'AccountManager'. 'AccountManager' parses each line_items and adds/credits/charges the account based on the command. Parser class is responsible for translating the line_items to arguments used to process the commands.  After creating an account, it is added to @@acounts collection, which can be accessed via 'accounts' method. 'find' method can be used to search for an account by owner name.
 
 Account class is responsible for account information. It has four attributes:
   - owner: owner name
